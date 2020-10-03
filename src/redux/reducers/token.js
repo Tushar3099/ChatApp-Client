@@ -1,4 +1,4 @@
-const defaultToken = "adasdad";
+const defaultToken = null;
 
 const TokenReducer = (state = defaultToken, action) => {
   switch (action.type) {

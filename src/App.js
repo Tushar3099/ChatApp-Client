@@ -23,7 +23,7 @@ function App() {
           </Switch>
         </div>
       </BrowserRouter>
-      {/* </PersistGate> */}
+      {/* </PersistGate>*/}
     </Provider>
   );
 }
