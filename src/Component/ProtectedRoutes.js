@@ -8,7 +8,7 @@ const ProtectedRoutes = ({ component: Component, ...rest }) => {
   console.log(token);
   const protectedRoutes = (props) =>
     isAuthenticated ? (
-      <Component {...props} />
+      <Component {...rest} {...props} />
     ) : (
       <Redirect to={{ pathname: "/login" }} />
     );

@@ -8,7 +8,7 @@ const UnProtectedRoutes = ({ component: Component, ...rest }) => {
 
   const unprotectedRoutes = (props) =>
     !isAuthenticated ? (
-      <Component {...props} />
+      <Component {...rest} {...props} />
     ) : (
       <Redirect to={{ pathname: "/" }} />
     );

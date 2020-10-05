@@ -1,9 +1,11 @@
-const defaultUser = null;
+const defaultUser = {
+  image: "https://www.flaticon.com/svg/static/icons/svg/847/847969.svg",
+};
 
 const UserReducer = (state = defaultUser, action) => {
   switch (action.type) {
     case "SET_USER":
-      return action.payload;
+      return { ...state, ...action.payload };
     case "SET_USERNAME":
       return { ...state, username: action.payload };
     case "SET_NAME":
