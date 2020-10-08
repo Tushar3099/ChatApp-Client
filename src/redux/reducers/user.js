@@ -1,5 +1,6 @@
 const defaultUser = {
-  image: "https://www.flaticon.com/svg/static/icons/svg/847/847969.svg",
+  image:
+    "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80",
 };
 
 const UserReducer = (state = defaultUser, action) => {

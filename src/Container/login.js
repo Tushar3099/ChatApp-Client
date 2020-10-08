@@ -40,8 +40,11 @@ function Login(props) {
         console.log(data);
         if (data.token) {
           toast(data.message, { className: "success", type: "success" });
-          dispatch(actions.setToken(data.token));
-          dispatch(actions.setUser(data.user));
+          setTimeout(() => {
+            dispatch(actions.setToken(data.token));
+
+            dispatch(actions.setUser(data.user));
+          }, 1000);
         } else {
           toast(data.message, { className: "error", type: "error" });
         }
