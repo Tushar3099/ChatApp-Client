@@ -1,5 +1,4 @@
 import axios from "axios";
-import querySting from "query-string";
 import { LOGIN_URL, SIGN_URL } from "../common/constants";
 
 export const login = ({ username, password }) => {

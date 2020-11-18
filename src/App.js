@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { Provider } from "react-redux";
 import "./App.css";
-import { BrowserRouter, Route, Redirect, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Switch } from "react-router-dom";
 import ProtectedRoute from "./Component/ProtectedRoutes";
 import UnProtectedRoute from "./Component/UnProtectedRoutes";
-import SlidingScreen from "./Component/SlidingScreen";
 import Home from "./Container/home";
 import Login from "./Container/login";
 import Signin from "./Container/signin";
 import { store, persistor } from "./common/reduxConfig";
 import { PersistGate } from "redux-persist/integration/react";
+import io from "socket.io-client";
 
 function App() {
-  const [isLeft, setIsLeft] = useState(true);
-
-  const changeScreen = (boolValue) => {
-    setIsLeft(boolValue);
-  };
+  // socket.on("message", (data) => {
+  //   console.log(data);
+  // });
+  useEffect(() => {
+    const socket = io("http://localhost:4000");
+  });
 
   return (
     <Provider store={store}>
@@ -27,16 +28,11 @@ function App() {
               <ProtectedRoute exact path="/" component={Home} />
               <div className="auth">
                 {/* <SlidingScreen isLeft={isLeft} /> */}
-                <UnProtectedRoute
-                  exact
-                  path="/login"
-                  changeScreen={changeScreen}
-                  component={Login}
-                />
+                <UnProtectedRoute exact path="/login" component={Login} />
                 <UnProtectedRoute
                   exact
                   path="/signin"
-                  changeScreen={changeScreen}
+                  // changeScreen={changeScreen}
                   component={Signin}
                 />
               </div>
