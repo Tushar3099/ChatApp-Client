@@ -26,12 +26,21 @@
     border: 2px solid #ced8e4;
 }
 
+.date{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: x-small;
+}
+
 input{
-    margin-left: 5px;
+margin-left: 5px;
  color : #adbdd2;   
  font-size: x-small*2;
  border: 0;
  flex-grow: 1;
+ overflow: hidden;
+ font-family: "Poppins", sans-serif;
 }
 
 input:focus{
@@ -41,7 +50,7 @@ outline: none;
 .chatBox{
     box-sizing: border-box;
     /* width: 100%; */
-    height : 6em;
+    height : 4em;
     display: flex;
     align-items: center;
     margin: 15px 15px 0px 15px;
@@ -49,11 +58,44 @@ outline: none;
     border-bottom: 2px solid #dee5ed ;
 }
 
+.chatContainer{
+    width: 100%;
+    transition : 0.3s all;
+}
+
+.chatContainer:hover{
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
 .image{
-    width : 3em;
-    height : 3em;
+    width : 2.6em;
+    height : 2.6em;
     border-radius: 50%;
     object-fit: cover;
 
 }
 
+.content{
+    /* background-color: red; */
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+    height: 100%;
+}
+
+.name{
+    font-size: 0.9em;
+    margin: 0;
+}
+.text{
+    font-size: 0.7em;
+    white-space: nowrap; 
+    width: 200px; 
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis; 
+}
