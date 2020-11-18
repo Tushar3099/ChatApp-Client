@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: white;
+    width : 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    margin: 0;
+    font-size: 1.3em;
+    letter-spacing: -1px;
+    font-weight: 600;
+    color: #2b2d3a;
+    text-align: left;
+}
+
+.activity{
+    display: flex;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    margin-right : 10px;
+}
+
+.status{
+    font-size: 0.75em;
+    font-weight: 300;
+    color: #626684;
+    margin: 0;
+    line-height: 8px;
+}
+
+.top{
+    margin : 0 20px;
+    padding: 10px 0px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 2px solid #dee5ed ;
+}
+.centre{
+    flex-grow: 1;
+}
+.bottom{
+    border-top: 2px solid #dee5ed ;
+    margin : 0 20px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input{
+    font-size: 1em;
+    flex-grow: 1;
+    color : slategrey;
+    /* background-color: yellow; */
+    font-family: "Poppins", sans-serif;
+    overflow: auto;
+    resize: none;
+    border: 0;
+    margin-right: 15px ;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.input::-webkit-scrollbar {
+  width: 12px;           
+}
+.input::-webkit-scrollbar-track {
+  background: white;    
+}
+.input::-webkit-scrollbar-thumb {
+  background-color: #dee5ed;   
+  border: 3px solid white;
+}
+
+.send{
+    z-index: 2;
+    width : 40px;
+    height : 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #e73232;
+    box-shadow: 0px 0px 20px -5px #e73232;
+    transition: 0.3s all;
+}
+.send:active{
+    box-shadow: 0px 0px 35px -5px #e73232;
+}
+
+.centre{
+    width: 100%;
+    /* background-color: red; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.leftMessage{
+    padding : 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #f4f6f9;
+    max-width: 60%;
+    box-shadow: 0px 0px 20px -5px #f4f6f9 ;
+    font-weight: 400;
+    font-size: small;
+    align-self: flex-start;
+    text-align: left;
+}
+.rightMessage{
+    padding : 10px 20px;
+    margin: 10px;
+    font-size: small;
+    font-weight: 400;
+    border-radius: 20px;
+    background-color: #ea4848;
+    background: linear-gradient(to right,#ea4848,#e73232);
+    max-width: 60%;
+    box-shadow: 0px 0px 20px -5px #ea4848 ;
+    color : white;
+    align-self: flex-end;
+    text-align: left;
+}
