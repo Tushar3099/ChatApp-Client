@@ -1,13 +1,11 @@
 import React from "react";
 import styles from "./styles/Dashboard.module.css";
 import { useSelector } from "react-redux";
-import { ReactSVG } from "react-svg";
 import {
   MdInput,
   MdSettings,
   MdChatBubbleOutline,
   MdSearch,
-  MdPermIdentity,
 } from "react-icons/md";
 
 import { AiOutlineUser } from "react-icons/ai";
@@ -16,7 +14,7 @@ function Dashboard() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.profile}>
-        <img src={user.image} className={styles.image} />
+        <img alt={`Image`} src={user.image} className={styles.image} />
       </div>
       <div className={styles.item}>
         <MdChatBubbleOutline style={{ color: "#ea4b4b", fontSize: "1.2em" }} />
