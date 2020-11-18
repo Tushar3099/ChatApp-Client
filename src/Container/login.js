@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { FaGooglePlusG, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { Transition, CSSTransition } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 import { login } from "../services/auth.service";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -18,7 +18,7 @@ function Login(props) {
   };
   const history = useHistory();
   const [detail, setDetail] = useState(initialDetail);
-  const user = useSelector((state) => state.user);
+  // const user = useSelector((state) => state.user);
   const [animate, setAnimate] = useState(true);
   const dispatch = useDispatch();
 
@@ -28,7 +28,7 @@ function Login(props) {
         history.push("/signin");
       }, 300);
     return clearInterval();
-  }, [animate]);
+  }, [animate, history]);
   // console.log("user", user);
   const clickHandler = (e) => {
     setDetail({ ...detail, [e.target.name]: e.target.value });

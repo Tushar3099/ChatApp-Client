@@ -35,7 +35,7 @@ export const chats = [
       },
       {
         _id: "5f711eb2b2a78315c84c7c27",
-        name: "Vedant Tripathi",
+        name: "Aayush Singh",
       },
     ],
     messages: [
@@ -63,7 +63,7 @@ export const chats = [
       },
       {
         _id: "5f711eb2b2a78315c84c7c27",
-        name: "Vedant Tripathi",
+        name: "Jhony Depp",
       },
     ],
     messages: [
