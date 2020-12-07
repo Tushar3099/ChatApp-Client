@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/CHATAPP-CLIENT/static/css/main.6c6a06d5.chunk.css",
+    "main.js": "/CHATAPP-CLIENT/static/js/main.8b69b85f.chunk.js",
+    "main.js.map": "/CHATAPP-CLIENT/static/js/main.8b69b85f.chunk.js.map",
+    "runtime-main.js": "/CHATAPP-CLIENT/static/js/runtime-main.8b781529.js",
+    "runtime-main.js.map": "/CHATAPP-CLIENT/static/js/runtime-main.8b781529.js.map",
+    "static/css/2.d34346ea.chunk.css": "/CHATAPP-CLIENT/static/css/2.d34346ea.chunk.css",
+    "static/js/2.baa4a77d.chunk.js": "/CHATAPP-CLIENT/static/js/2.baa4a77d.chunk.js",
+    "static/js/2.baa4a77d.chunk.js.map": "/CHATAPP-CLIENT/static/js/2.baa4a77d.chunk.js.map",
+    "index.html": "/CHATAPP-CLIENT/index.html",
+    "precache-manifest.a27936a3948c25ac3de680fa710a95be.js": "/CHATAPP-CLIENT/precache-manifest.a27936a3948c25ac3de680fa710a95be.js",
+    "service-worker.js": "/CHATAPP-CLIENT/service-worker.js",
+    "static/css/2.d34346ea.chunk.css.map": "/CHATAPP-CLIENT/static/css/2.d34346ea.chunk.css.map",
+    "static/css/main.6c6a06d5.chunk.css.map": "/CHATAPP-CLIENT/static/css/main.6c6a06d5.chunk.css.map",
+    "static/js/2.baa4a77d.chunk.js.LICENSE.txt": "/CHATAPP-CLIENT/static/js/2.baa4a77d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b781529.js",
+    "static/css/2.d34346ea.chunk.css",
+    "static/js/2.baa4a77d.chunk.js",
+    "static/css/main.6c6a06d5.chunk.css",
+    "static/js/main.8b69b85f.chunk.js"
+  ]
+}
